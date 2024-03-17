@@ -11,7 +11,7 @@
   position: relative;
   z-index: 11;
 }
-/* .banner-section::after {
+.banner-section::after {
   content: "";
   display: block;
   width: 100%;
@@ -26,7 +26,7 @@
   bottom: 0;
   left: 0;
   z-index: -1;
-} */
+}
 .banner-section p {
   text-align: center;
   font-size: 40px;
@@ -36,7 +36,7 @@
   margin-bottom: 100px;
   position: absolute;
   z-index: 22;
-  color: #000;
+  color: #fff;
 }
 .card-section {
   background: #f4ecec;
@@ -97,21 +97,23 @@
   margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .contact-form .form-container .form-image {
-  flex-basis: 50%;
+  max-width: 400px;
+  min-width: 200px;
   text-align: center;
 }
 .contact-form .form-container .form-image img {
-  max-width: 500px;
+  max-width: 100%;
 }
 .contact-form .form-container .form h1 {
   margin-bottom: 20px;
 }
 .contact-form .form-container .form {
-  flex-basis: 50%;
+  max-width: 700px;
+  min-width: 200px;
 }
 .contact-form .form-container .form label {
   margin-bottom: 5px;
