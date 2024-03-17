@@ -1,0 +1,162 @@
+.contact {
+  background: rgb(129, 128, 127);
+}
+.banner-section {
+  justify-content: center;
+  display: flex;
+  max-width: 100%;
+  height: 600px;
+  background: #f4ecec url("../images/contact-wav.jpg") no-repeat;
+  background-size: auto 100%;
+  position: relative;
+  z-index: 11;
+}
+/* .banner-section::after {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(
+    rgba(255, 0, 0, 0.236),
+    rgba(26, 130, 253, 0.356)
+  );
+  left: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+} */
+.banner-section p {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  display: inline-block;
+  align-self: flex-end;
+  margin-bottom: 100px;
+  position: absolute;
+  z-index: 22;
+  color: #000;
+}
+.card-section {
+  background: #f4ecec;
+  padding: 20px 0;
+}
+.card-section .card-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.card-section .card-container .card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 50px 20px;
+  text-align: center;
+  width: 350px;
+  line-height: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ddd;
+}
+.card-section .card-container .card .fa-envelope {
+  background: rgba(134, 108, 194, 0.231);
+  width: 60px;
+  line-height: 60px;
+  vertical-align: middle;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #866cc2;
+  margin-bottom: 10px;
+}
+.card-section .card-container .card .fa-location-dot {
+  background: rgba(150, 190, 216, 0.356);
+  width: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #60a2ce;
+  margin-bottom: 10px;
+}
+.card-section .card-container .card .fa-phone {
+  background: rgb(242, 169, 14, 0.256);
+  width: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  border-radius: 50%;
+  font-size: 25px;
+  color: rgb(242, 169, 14);
+  margin-bottom: 10px;
+}
+
+.contact-form .form-container {
+  max-width: 1440px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form .form-container .form-image {
+  flex-basis: 50%;
+  text-align: center;
+}
+.contact-form .form-container .form-image img {
+  max-width: 500px;
+}
+.contact-form .form-container .form h1 {
+  margin-bottom: 20px;
+}
+.contact-form .form-container .form {
+  flex-basis: 50%;
+}
+.contact-form .form-container .form label {
+  margin-bottom: 5px;
+}
+.contact-form .form-container .form input:focus {
+  box-shadow: 0 0 2px 3px rgba(26, 128, 253, 0.479);
+  border: 1px solid rgb(26, 130, 253);
+  outline: none;
+}
+.contact-form .form-container .form textarea:focus {
+  box-shadow: 0 0 2px 3px rgba(26, 128, 253, 0.479);
+  border: 1px solid rgb(26, 130, 253);
+  outline: none;
+}
+
+.contact-form .form-container .form button {
+  background: rgb(26, 130, 253);
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: none;
+  outline: none;
+}
+.contact-form .form-container .form input,
+.contact-form .form-container .form button {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.contact-form .form-container .form input::placeholder,
+.contact-form .form-container .form textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.contact-form .form-container .form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}

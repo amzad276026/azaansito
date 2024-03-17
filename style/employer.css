@@ -1,0 +1,52 @@
+.employer {
+  background: rgb(129, 128, 127);
+}
+.employer-section {
+  margin: 20px 0;
+}
+.employer-section .employer-container {
+  max-width: 1440px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.employer-section .employer {
+  /* width: 500px; */
+  min-width: 40%;
+  background: #f1f3f8;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.employer-section .employer .imploy-info {
+  font-size: 17px;
+  background: #d9e9f8;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #101010;
+  width: 400px;
+  text-align: center;
+}
+.employer.center {
+  margin: 0 auto;
+  max-width: 550px;
+}
+.employer-section .employer img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  background: #d9e9f8;
+}
+
+@media screen and (max-width: 1000px) {
+  .employer-section .employer {
+    /* width: 500px; */
+    flex-basis: 500px;
+  }
+}

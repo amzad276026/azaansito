@@ -1,0 +1,33 @@
+.notice {
+  background-color: rgb(129, 128, 127);
+}
+.notice-section .notice-container {
+  max-width: 1440px;
+  margin: 20px auto;
+}
+.notice-section .notice-container .notices {
+  background: #f2eaea;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  color: #101010;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  margin: 10px 0;
+  align-items: center;
+}
+.notice-section .notice-container .notices:hover {
+  background: rgba(104, 94, 94, 0.232);
+  cursor: text;
+}
+.notice-section .notice-container .notices .pdf-ic a {
+  color: rgba(255, 0, 0, 0.575);
+  font-size: 25px;
+}
+.notice-section .notice-container .notices .pdf-ic a:hover {
+  color: rgba(255, 0, 0);
+}
+.notice-section {
+  max-height: 500px;
+  overflow-y: scroll;
+}
