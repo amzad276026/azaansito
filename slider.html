@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Image Slider</title>
+<style>
+  .slider-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .slide {
+    flex: 0 0 100%;
+    transition: opacity 0.5s ease;
+  }
+  .indicator {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+  }
+  .indicator.active {
+    background-color: #333;
+  }
+</style>
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slider">
+    <div class="slide"><img src="./web-developer.png" alt="Image 1"></div>
+    <div class="slide"><img src="./sayem.jpg" alt="Image 2"></div>
+    <div class="slide"><img src="./sakib.jpg" alt="Image 3"></div>
+    <!-- Add more slides as needed -->
+  </div>
+</div>
+
+<div style="text-align:center; margin-top: 10px;">
+  <span class="indicator active" onclick="changeSlide(0)"></span>
+  <span class="indicator" onclick="changeSlide(1)"></span>
+  <span class="indicator" onclick="changeSlide(2)"></span>
+  <!-- Add more indicators as needed -->
+</div>
+
+<button onclick="prevSlide()">Previous</button>
+<button onclick="nextSlide()">Next</button>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+  const indicators = document.querySelectorAll('.indicator');
+
+  function showSlide(n) {
+    if (n < 0) {
+      currentSlide = slides.length - 1;
+    } else if (n >= slides.length) {
+      currentSlide = 0;
+    } else {
+      currentSlide = n;
+    }
+    slides.forEach((slide, index) => {
+      if (index === currentSlide) {
+        slide.style.opacity = 1;
+      } else {
+        slide.style.opacity = 0;
+      }
+    });
+    updateIndicators();
+  }
+
+  function updateIndicators() {
+    indicators.forEach((indicator, index) => {
+      if (index === currentSlide) {
+        indicator.classList.add('active');
+      } else {
+        indicator.classList.remove('active');
+      }
+    });
+  }
+
+  function prevSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function changeSlide(n) {
+    showSlide(n);
+  }
+
+  showSlide(currentSlide);
+</script>
+
+</body>
+</html>
