@@ -135,7 +135,7 @@ header {
   background-attachment: fixed;
   text-align: right;
 }
-.top-banner img {
+.top-banner .logoimg {
   width: 100px;
   height: 100px;
   margin-top: 69px;
