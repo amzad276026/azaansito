@@ -533,7 +533,7 @@ footer .footer-bottom {
   -o-border-radius: 5px;
   
 }
-.service-section .service-container .services .service-para:hover a {
+.service-section .service-container .services:hover a {
   animation: move-left 0.5s ease-in forwards;
   
 }
